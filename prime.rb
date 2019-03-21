@@ -1,8 +1,9 @@
-def prime?(i)
-if i % 2 == 0
-  return true
-else
-  return false
-  # Add code here!
-end
+ddef prime?(integer)
+    return false if integer < 2
+    (2..integer - 1).each do |x|
+        if (integer % x) == 0
+            return false
+        end
+    end
+    true
 end
